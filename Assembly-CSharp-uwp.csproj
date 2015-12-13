@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(SolutionDir)UnityCommon.props" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FBA57953-C0C3-F9D8-E86A-9F7C063B5FDE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AssemblyCSharpWSA</RootNamespace>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.10240.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\UWP\x86\Debug</OutputPath>
+    <BaseIntermediateOutputPath>obj\UWP\x86\Debug</BaseIntermediateOutputPath>
+    <DefineConstants>DEBUG;TRACE;ENABLE_PROFILER;UNITY_5_2_0;UNITY_5_2;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_REFLECTION_BUFFERS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;UNITY_METRO;UNITY_METRO_API;UNITY_WINRT;ENABLE_WINRT_PINVOKE;ENABLE_TEXTUREID_MAP;ENABLE_LAZY_METHOD_CACHING;ENABLE_MOVIES;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_EVENT_QUEUE;ENABLE_NETWORK;UNITY_WSA;UNITY_WINRT_10_0;NETFX_CORE;WINDOWS_UWP;UNITY_UWP;UNITY_WSA_10_0;</DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\UWP\x86\Release</OutputPath>
+    <BaseIntermediateOutputPath>obj\UWP\x86\Release</BaseIntermediateOutputPath>
+    <DefineConstants>TRACE;ENABLE_PROFILER;UNITY_5_2_0;UNITY_5_2;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_REFLECTION_BUFFERS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;UNITY_METRO;UNITY_METRO_API;UNITY_WINRT;ENABLE_WINRT_PINVOKE;ENABLE_TEXTUREID_MAP;ENABLE_LAZY_METHOD_CACHING;ENABLE_MOVIES;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_EVENT_QUEUE;ENABLE_NETWORK;UNITY_WSA;UNITY_WINRT_10_0;NETFX_CORE;WINDOWS_UWP;UNITY_UWP;UNITY_WSA_10_0;</DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Master|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\UWP\x86\Master</OutputPath>
+    <BaseIntermediateOutputPath>obj\UWP\x86\Master</BaseIntermediateOutputPath>
+    <DefineConstants>TRACE;UNITY_5_2_0;UNITY_5_2;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_REFLECTION_BUFFERS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;UNITY_METRO;UNITY_METRO_API;UNITY_WINRT;ENABLE_WINRT_PINVOKE;ENABLE_TEXTUREID_MAP;ENABLE_LAZY_METHOD_CACHING;ENABLE_MOVIES;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_EVENT_QUEUE;ENABLE_NETWORK;UNITY_WSA;UNITY_WINRT_10_0;NETFX_CORE;WINDOWS_UWP;UNITY_UWP;UNITY_WSA_10_0;</DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\UWP\x64\Debug</OutputPath>
+    <BaseIntermediateOutputPath>obj\UWP\x64\Debug</BaseIntermediateOutputPath>
+    <DefineConstants>DEBUG;TRACE;ENABLE_PROFILER;UNITY_5_2_0;UNITY_5_2;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_REFLECTION_BUFFERS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;UNITY_METRO;UNITY_METRO_API;UNITY_WINRT;ENABLE_WINRT_PINVOKE;ENABLE_TEXTUREID_MAP;ENABLE_LAZY_METHOD_CACHING;ENABLE_MOVIES;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_EVENT_QUEUE;ENABLE_NETWORK;UNITY_WSA;UNITY_WINRT_10_0;NETFX_CORE;WINDOWS_UWP;UNITY_UWP;UNITY_WSA_10_0;</DefineConstants>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\UWP\x64\Release</OutputPath>
+    <BaseIntermediateOutputPath>obj\UWP\x64\Release</BaseIntermediateOutputPath>
+    <DefineConstants>TRACE;ENABLE_PROFILER;UNITY_5_2_0;UNITY_5_2;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_REFLECTION_BUFFERS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;UNITY_METRO;UNITY_METRO_API;UNITY_WINRT;ENABLE_WINRT_PINVOKE;ENABLE_TEXTUREID_MAP;ENABLE_LAZY_METHOD_CACHING;ENABLE_MOVIES;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_EVENT_QUEUE;ENABLE_NETWORK;UNITY_WSA;UNITY_WINRT_10_0;NETFX_CORE;WINDOWS_UWP;UNITY_UWP;UNITY_WSA_10_0;</DefineConstants>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Master|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\UWP\x64\Master</OutputPath>
+    <BaseIntermediateOutputPath>obj\UWP\x64\Master</BaseIntermediateOutputPath>
+    <DefineConstants>TRACE;UNITY_5_2_0;UNITY_5_2;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_REFLECTION_BUFFERS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;UNITY_METRO;UNITY_METRO_API;UNITY_WINRT;ENABLE_WINRT_PINVOKE;ENABLE_TEXTUREID_MAP;ENABLE_LAZY_METHOD_CACHING;ENABLE_MOVIES;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_EVENT_QUEUE;ENABLE_NETWORK;UNITY_WSA;UNITY_WINRT_10_0;NETFX_CORE;WINDOWS_UWP;UNITY_UWP;UNITY_WSA_10_0;</DefineConstants>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|ARM' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\UWP\ARM\Debug</OutputPath>
+    <BaseIntermediateOutputPath>obj\UWP\ARM\Debug</BaseIntermediateOutputPath>
+    <DefineConstants>DEBUG;TRACE;ENABLE_PROFILER;UNITY_5_2_0;UNITY_5_2;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_REFLECTION_BUFFERS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;UNITY_METRO;UNITY_METRO_API;UNITY_WINRT;ENABLE_WINRT_PINVOKE;ENABLE_TEXTUREID_MAP;ENABLE_LAZY_METHOD_CACHING;ENABLE_MOVIES;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_EVENT_QUEUE;ENABLE_NETWORK;UNITY_WSA;UNITY_WINRT_10_0;NETFX_CORE;WINDOWS_UWP;UNITY_UWP;UNITY_WSA_10_0;</DefineConstants>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|ARM' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\UWP\ARM\Release</OutputPath>
+    <BaseIntermediateOutputPath>obj\UWP\ARM\Release</BaseIntermediateOutputPath>
+    <DefineConstants>TRACE;ENABLE_PROFILER;UNITY_5_2_0;UNITY_5_2;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_REFLECTION_BUFFERS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;UNITY_METRO;UNITY_METRO_API;UNITY_WINRT;ENABLE_WINRT_PINVOKE;ENABLE_TEXTUREID_MAP;ENABLE_LAZY_METHOD_CACHING;ENABLE_MOVIES;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_EVENT_QUEUE;ENABLE_NETWORK;UNITY_WSA;UNITY_WINRT_10_0;NETFX_CORE;WINDOWS_UWP;UNITY_UWP;UNITY_WSA_10_0;</DefineConstants>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Master|ARM' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\UWP\ARM\Master</OutputPath>
+    <BaseIntermediateOutputPath>obj\UWP\ARM\Master</BaseIntermediateOutputPath>
+    <DefineConstants>TRACE;UNITY_5_2_0;UNITY_5_2;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_REFLECTION_BUFFERS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;UNITY_METRO;UNITY_METRO_API;UNITY_WINRT;ENABLE_WINRT_PINVOKE;ENABLE_TEXTUREID_MAP;ENABLE_LAZY_METHOD_CACHING;ENABLE_MOVIES;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_EVENT_QUEUE;ENABLE_NETWORK;UNITY_WSA;UNITY_WINRT_10_0;NETFX_CORE;WINDOWS_UWP;UNITY_UWP;UNITY_WSA_10_0;</DefineConstants>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass-uwp.csproj">
+      <Project>{194d914d-0664-444e-b663-4d0f1c80af68}</Project>
+      <Name>Assembly-CSharp-firstpass-uwp</Name>
+    </ProjectReference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>$(SolutionDir)$(SolutionName)\Unprocessed\Assembly-CSharp-firstpass.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(SolutionDir)$(SolutionName)\Unprocessed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WinRTLegacy">
+      <HintPath>$(SolutionDir)$(SolutionName)\Unprocessed\WinRTLegacy.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>$(SolutionDir)$(SolutionName)\Unprocessed\UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>$(SolutionDir)$(SolutionName)\Unprocessed\UnityEngine.Networking.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Plugins\Soomla\Core\AndroidImpl\KeyValueStorageAndroid.cs" />
+    <None Include="Assets\Plugins\Soomla\Core\AndroidImpl\RewardStorageAndroid.cs" />
+    <None Include="Assets\Plugins\Soomla\Core\Config\android\ISoomlaManifestTools.cs" />
+    <None Include="Assets\Plugins\Soomla\Core\Config\android\SoomlaAndroidUtil.cs" />
+    <None Include="Assets\Plugins\Soomla\Core\Config\android\SoomlaManifestTools.cs" />
+    <None Include="Assets\Plugins\Soomla\Core\Config\CoreSettings.cs" />
+    <None Include="Assets\Plugins\Soomla\Core\Config\ISoomlaPostBuildTool.cs" />
+    <None Include="Assets\Plugins\Soomla\Core\Config\ISoomlaSettings.cs" />
+    <None Include="Assets\Plugins\Soomla\Core\Config\ObjectDictionary.cs" />
+    <None Include="Assets\Plugins\Soomla\Core\Config\SoomlaEditorScript.cs" />
+    <None Include="Assets\Plugins\Soomla\Core\Config\SoomlaPostBuildTools.cs" />
+    <None Include="Assets\Plugins\Soomla\Core\Config\UnityDictionary.cs" />
+    <None Include="Assets\Plugins\Soomla\Core\CoreEvents.cs" />
+    <None Include="Assets\Plugins\Soomla\Core\data\JSONConsts.cs" />
+    <None Include="Assets\Plugins\Soomla\Core\data\KeyValueStorage.cs" />
+    <None Include="Assets\Plugins\Soomla\Core\data\RewardStorage.cs" />
+    <None Include="Assets\Plugins\Soomla\Core\IOSImpl\KeyValueStorageIOS.cs" />
+    <None Include="Assets\Plugins\Soomla\Core\IOSImpl\RewardStorageIOS.cs" />
+    <None Include="Assets\Plugins\Soomla\Core\JSONObject.cs" />
+    <None Include="Assets\Plugins\Soomla\Core\NullCheckable.cs" />
+    <None Include="Assets\Plugins\Soomla\Core\rewards\BadgeReward.cs" />
+    <None Include="Assets\Plugins\Soomla\Core\rewards\RandomReward.cs" />
+    <None Include="Assets\Plugins\Soomla\Core\rewards\Reward.cs" />
+    <None Include="Assets\Plugins\Soomla\Core\rewards\SequenceReward.cs" />
+    <None Include="Assets\Plugins\Soomla\Core\Schedule.cs" />
+    <None Include="Assets\Plugins\Soomla\Core\SoomlaEntity.cs" />
+    <None Include="Assets\Plugins\Soomla\Core\SoomlaExtensions.cs" />
+    <None Include="Assets\Plugins\Soomla\Core\SoomlaUtils.cs" />
+    <None Include="Assets\Plugins\Soomla\Core\WPImpl\KeyValueStorageWP.cs" />
+    <None Include="Assets\Plugins\Soomla\Core\WPImpl\RewardStorageWP.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\AndroidImpl\AndroidJNIHandler.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\AndroidImpl\SoomlaStoreAndroid.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\AndroidImpl\StoreEventPusherAndroid.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\AndroidImpl\StoreInfoAndroid.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\AndroidImpl\VirtualCurrencyStorageAndroid.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\AndroidImpl\VirtualGoodsStorageAndroid.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\Config\StoreManifestTools.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\Config\StoreSettings.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\data\StoreInfo.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\data\StoreJSONConsts.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\data\VirtualCurrencyStorage.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\data\VirtualGoodsStorage.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\data\VirtualItemStorage.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\domain\MarketItem.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\domain\PurchasableVirtualItem.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\domain\VirtualCategory.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\domain\virtualCurrencies\VirtualCurrency.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\domain\virtualCurrencies\VirtualCurrencyPack.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\domain\virtualGoods\EquippableVG.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\domain\virtualGoods\LifetimeVG.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\domain\virtualGoods\SingleUsePackVG.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\domain\virtualGoods\SingleUseVG.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\domain\virtualGoods\UpgradeVG.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\domain\virtualGoods\VirtualGood.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\domain\VirtualItem.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\exceptions\InsufficientFundsException.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\exceptions\NotEnoughGoodsException.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\exceptions\VirtualItemNotFoundException.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\IOSImpl\IOS_ErrorCodes.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\IOSImpl\SoomlaStoreIOS.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\IOSImpl\StoreEventPusherIOS.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\IOSImpl\StoreInfoIOS.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\IOSImpl\VirtualCurrencyStorageIOS.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\IOSImpl\VirtualGoodsStorageIOS.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\IStoreAssets.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\purchaseTypes\PurchaseType.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\purchaseTypes\PurchaseWithMarket.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\purchaseTypes\PurchaseWithVirtualItem.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\rewards\VirtualItemReward.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\SoomlaStore.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\StoreEvents.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\StoreInventory.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\WPImpl\SoomlaStoreWP.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\WPImpl\StoreEventPusherWP.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\WPImpl\StoreInfoWP.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\WPImpl\VirtualCurrencyStorageWP.cs" />
+    <None Include="Assets\Plugins\Soomla\Store\WPImpl\VirtualGoodsStorageWP.cs" />
+    <None Include="Assets\Standard Assets\2D\Scripts\Camera2DFollow.cs" />
+    <None Include="Assets\Standard Assets\2D\Scripts\CameraFollow.cs" />
+    <None Include="Assets\Standard Assets\2D\Scripts\Platformer2DUserControl.cs" />
+    <None Include="Assets\Standard Assets\2D\Scripts\PlatformerCharacter2D.cs" />
+    <None Include="Assets\Standard Assets\2D\Scripts\Restarter.cs" />
+    <None Include="Assets\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
+    <None Include="Assets\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs" />
+    <None Include="Assets\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
+    <None Include="Assets\Standard Assets\CrossPlatformInput\Scripts\InputAxisScrollbar.cs" />
+    <None Include="Assets\Standard Assets\CrossPlatformInput\Scripts\Joystick.cs" />
+    <None Include="Assets\Standard Assets\CrossPlatformInput\Scripts\MobileControlRig.cs" />
+    <None Include="Assets\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs" />
+    <None Include="Assets\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
+    <None Include="Assets\Standard Assets\CrossPlatformInput\Scripts\TiltInput.cs" />
+    <None Include="Assets\Standard Assets\CrossPlatformInput\Scripts\TouchPad.cs" />
+    <None Include="Assets\Standard Assets\CrossPlatformInput\Scripts\VirtualInput.cs" />
+    <None Include="Assets\Standard Assets\Utility\ActivateTrigger.cs" />
+    <None Include="Assets\Standard Assets\Utility\AutoMobileShaderSwitch.cs" />
+    <None Include="Assets\Standard Assets\Utility\AutoMoveAndRotate.cs" />
+    <None Include="Assets\Standard Assets\Utility\CameraRefocus.cs" />
+    <None Include="Assets\Standard Assets\Utility\CurveControlledBob.cs" />
+    <None Include="Assets\Standard Assets\Utility\DragRigidbody.cs" />
+    <None Include="Assets\Standard Assets\Utility\DynamicShadowSettings.cs" />
+    <None Include="Assets\Standard Assets\Utility\FollowTarget.cs" />
+    <None Include="Assets\Standard Assets\Utility\ForcedReset.cs" />
+    <None Include="Assets\Standard Assets\Utility\FOVKick.cs" />
+    <None Include="Assets\Standard Assets\Utility\FPSCounter.cs" />
+    <None Include="Assets\Standard Assets\Utility\LerpControlledBob.cs" />
+    <None Include="Assets\Standard Assets\Utility\ObjectResetter.cs" />
+    <None Include="Assets\Standard Assets\Utility\ParticleSystemDestroyer.cs" />
+    <None Include="Assets\Standard Assets\Utility\PlatformSpecificContent.cs" />
+    <None Include="Assets\Standard Assets\Utility\SimpleActivatorMenu.cs" />
+    <None Include="Assets\Standard Assets\Utility\SimpleMouseRotator.cs" />
+    <None Include="Assets\Standard Assets\Utility\SmoothFollow.cs" />
+    <None Include="Assets\Standard Assets\Utility\TimedObjectActivator.cs" />
+    <None Include="Assets\Standard Assets\Utility\TimedObjectDestructor.cs" />
+    <None Include="Assets\Standard Assets\Utility\WaypointCircuit.cs" />
+    <None Include="Assets\Standard Assets\Utility\WaypointProgressTracker.cs" />
+    <Compile Include="Assets\Examples\MuffinRush\Example.cs" />
+    <Compile Include="Assets\Examples\MuffinRush\ExampleEventHandler.cs" />
+    <Compile Include="Assets\Examples\MuffinRush\ExampleWindow.cs" />
+    <Compile Include="Assets\Examples\MuffinRush\MuffinRushAssets.cs" />
+    <Compile Include="Assets\Game Jam Menu Template\Scripts\DontDestroy.cs" />
+    <Compile Include="Assets\Game Jam Menu Template\Scripts\EventSystemChecker.cs" />
+    <Compile Include="Assets\Game Jam Menu Template\Scripts\Pause.cs" />
+    <Compile Include="Assets\Game Jam Menu Template\Scripts\PlayMusic.cs" />
+    <Compile Include="Assets\Game Jam Menu Template\Scripts\QuitApplication.cs" />
+    <Compile Include="Assets\Game Jam Menu Template\Scripts\SetAudioLevels.cs" />
+    <Compile Include="Assets\Game Jam Menu Template\Scripts\ShowPanels.cs" />
+    <Compile Include="Assets\Game Jam Menu Template\Scripts\StartOptions.cs" />
+    <Compile Include="Assets\MoneyScore.cs" />
+    <Compile Include="Assets\Scripts\AnimCoin.cs" />
+    <Compile Include="Assets\Scripts\Banana.cs" />
+    <Compile Include="Assets\Scripts\BossSpawner.cs" />
+    <Compile Include="Assets\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\CanvasInstantiator.cs" />
+    <Compile Include="Assets\Scripts\CoinGC.cs" />
+    <Compile Include="Assets\Scripts\CoinGenerator.cs" />
+    <Compile Include="Assets\Scripts\Controller2D.cs" />
+    <Compile Include="Assets\Scripts\CPLiveAssets.cs" />
+    <Compile Include="Assets\Scripts\DropbGO.cs" />
+    <Compile Include="Assets\Scripts\FollowPlayer.cs" />
+    <Compile Include="Assets\Scripts\GameLoadStore.cs" />
+    <Compile Include="Assets\Scripts\GameplayEvents.cs" />
+    <Compile Include="Assets\Scripts\GreenClassStroller.cs" />
+    <Compile Include="Assets\Scripts\Killa.cs" />
+    <Compile Include="Assets\Scripts\Kilometers.cs" />
+    <Compile Include="Assets\Scripts\LevelIndicator.cs" />
+    <Compile Include="Assets\Scripts\LevelSpawner.cs" />
+    <Compile Include="Assets\Scripts\LoadStore.cs" />
+    <Compile Include="Assets\Scripts\Mixtape.cs" />
+    <Compile Include="Assets\Scripts\MixtapeInstantiator.cs" />
+    <Compile Include="Assets\Scripts\Money.cs" />
+    <Compile Include="Assets\Scripts\MoneyBox.cs" />
+    <Compile Include="Assets\Scripts\MoneyBoxStandalone.cs" />
+    <Compile Include="Assets\Scripts\MonyStandalone.cs" />
+    <Compile Include="Assets\Scripts\Pauser.cs" />
+    <Compile Include="Assets\Scripts\RCOGenerator.cs" />
+    <Compile Include="Assets\Scripts\RedClassObstacle.cs" />
+    <Compile Include="Assets\Scripts\SceneLoadr.cs" />
+    <Compile Include="Assets\Scripts\SlotMachine.cs" />
+    <Compile Include="Assets\Scripts\SoomlaAssets.cs" />
+    <Compile Include="Assets\Scripts\TouchMobilizer.cs" />
+    <Compile Include="Assets\Scripts\TrainLevelDetector.cs" />
+    <Compile Include="Assets\Scripts\TrainLevelGenerator.cs" />
+    <Compile Include="Assets\Scripts\TrainMover.cs" />
+    <Compile Include="Assets\Scripts\Transit.cs" />
+    <Compile Include="Assets\Scripts\TransitGC.cs" />
+    <Compile Include="Assets\Scripts\TransitSpawner.cs" />
+    <Compile Include="Assets\Scripts\TransObbyGen.cs" />
+    <Compile Include="Assets\Scripts\Wallet.cs" />
+    <Compile Include="Assets\Steer2D\Examples\Assets\Target.cs" />
+    <Compile Include="Assets\Steer2D\Scripts\Arrive.cs" />
+    <Compile Include="Assets\Steer2D\Scripts\Evade.cs" />
+    <Compile Include="Assets\Steer2D\Scripts\Flee.cs" />
+    <Compile Include="Assets\Steer2D\Scripts\Flock.cs" />
+    <Compile Include="Assets\Steer2D\Scripts\FollowPath.cs" />
+    <Compile Include="Assets\Steer2D\Scripts\Pursue.cs" />
+    <Compile Include="Assets\Steer2D\Scripts\Seek.cs" />
+    <Compile Include="Assets\Steer2D\Scripts\SteeringAgent.cs" />
+    <Compile Include="Assets\Steer2D\Scripts\SteeringBehaviour.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\Plugins\" />
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <PropertyGroup>
+    <TargetsTriggeredByCompilation>$(TargetsTriggeredByCompilation);RunSerializationWeaver</TargetsTriggeredByCompilation>
+  </PropertyGroup>
+  <Target Name="RunSerializationWeaver">
+    <Message Importance="high" Text="Running SerializationWeaver..." />
+    <Exec Command="&quot;$(UnityWSAToolsDir)\SerializationWeaver\SerializationWeaver.exe&quot; &quot;@(IntermediateAssembly->'%(FullPath)')&quot; -pdb -verbose -unity-engine=&quot;$(SolutionDir)$(SolutionName)\Unprocessed\UnityEngine.dll&quot; &quot;$([System.IO.Path]::GetFullPath('$(IntermediateOutputPath)').TrimEnd('\'))&quot;" />
+    <Copy SourceFiles="@(IntermediateAssembly)" DestinationFolder="$(TargetDir)Unprocessed" />
+    <Copy SourceFiles="@(IntermediateAssembly->'%(RelativeDir)%(Filename).pdb')" DestinationFolder="$(TargetDir)Unprocessed" Condition="Exists('@(IntermediateAssembly->'%(RelativeDir)%(Filename).pdb')')" />
+    <Message Importance="high" Text="SerializationWeaver done." />
+  </Target>
+  <PropertyGroup>
+    <CleanDependsOn>$(CleanDependsOn);CleanSerializationWeaver</CleanDependsOn>
+  </PropertyGroup>
+  <Target Name="CleanSerializationWeaver">
+    <Delete Files="$(TargetDir)Unprocessed\$(TargetFileName)" />
+    <Delete Files="$(TargetDir)Unprocessed\$(TargetName).pdb" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
